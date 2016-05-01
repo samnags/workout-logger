@@ -1,0 +1,6 @@
+<%= form_for [@workout, @workout_set] do |f| %>
+  <%= render partial: 'form', locals: {f: f} %>
+  <%= f.submit 'Add Set'%>
+<% end %>
+
+

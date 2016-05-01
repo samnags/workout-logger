@@ -1,0 +1,24 @@
+# == Schema Information
+#
+# Table name: exercises
+#
+#  id               :integer          not null, primary key
+#  name             :string
+#  muscle           :string
+#  secondary_muscle :string
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#  approved         :boolean          default("f")
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  muscle: MyString
+  secondary_muscle: MyString
+
+two:
+  name: MyString
+  muscle: MyString
+  secondary_muscle: MyString

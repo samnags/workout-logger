@@ -1,0 +1,17 @@
+# == Schema Information
+#
+# Table name: workouts
+#
+#  id         :integer          not null, primary key
+#  date       :datetime
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-04-29 09:31:00
+
+two:
+  date: 2016-04-29 09:31:00

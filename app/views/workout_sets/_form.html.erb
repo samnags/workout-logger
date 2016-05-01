@@ -1,0 +1,15 @@
+
+ <%= f.label :exercise %><br>
+ <%= f.collection_select :exercise_id, Exercise.order('name'), :id, :name  %><br><br>
+
+ <%= f.label :set_num, 'Set Number' %><br>
+ <%= f.text_field :set_num %><br><br>
+
+ <%= f.label :weight %><br>
+ <%= f.text_field :weight %><br><br>
+
+ <%= f.label :reps %><br>
+ <%= f.text_field :reps %><br>
+
+
+    

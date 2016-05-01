@@ -1,0 +1,12 @@
+ <% if @workout.errors.any? %>
+    <ul>
+      <% @workout.errors.full_messages.each do |msg| %>
+        <li> <%= msg %> </li>
+      <% end %>
+    </ul>
+  <% end %>
+
+    <%= f.label :date %><br>
+    <%= f.datetime_select :date, ampm: true %><br><br>
+
+ 
