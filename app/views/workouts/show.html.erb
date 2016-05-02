@@ -1,1 +1,13 @@
-<%= @workout.date_converter %> 
+<%= @workout.date_converter %> <br><br>
+
+  
+<% @workout.workout_sets.each do |set| %>
+  <ul>
+  <%= Exercise.find(set.exercise_id).name %>
+  <li>Set: <%= set.set_num %></li>
+  <li>Weight: <%= set.weight %></li>
+  <li>Reps: <%= set.reps %></li>
+  </ul>
+<% end %>
+  
+<%= link_to "Add another set", new_workout_workout_set_path(@workout)%>
